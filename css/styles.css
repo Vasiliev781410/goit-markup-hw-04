@@ -3,7 +3,7 @@
     --primary-text-color: #212121;    
     --secondary-text-color: #757575;
     --accent-text-color1: #ffffff;
-    --accent-text-color2: #2196F3;
+    --accent-text-color2: #2196F3;  
     --bg-color: #2F303A;
     --contact-color-footer: rgba(255,255,255,0.6);
     --logo-color-text: #000000; 
@@ -105,10 +105,41 @@ body{
     display: flex;
     margin-left: auto;
 }
+.contact-icon{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;     
+}
 .contact-link:not(:last-child){
-    margin-right: 50px;   
+    margin-right: 50px;      
    
  }
+ 
+ .icon{
+    object-fit:  cover;
+    object-position: center;   
+ }
+ 
+   
+ .icon:hover,
+ .icon:focus{
+    fill: var(--accent-text-color2);              
+ }
+
+ .icon.social{
+    fill: #afb1b8;
+    background-color: var(--accent-text-color1);
+  }
+ .icon.social:hover,
+ .icon.social:focus{
+   fill: var(--accent-text-color1);
+   background-color: var(--accent-text-color2);
+}
+.social-ref{
+    width: 44px;
+    height: 44px;
+}
    
 .contact-link{      
 
@@ -176,6 +207,7 @@ body{
     background-color: var(--bg-color);    
     padding-top: 200px;
     padding-bottom: 200px;
+    max-width: 1600px;
   
 }
 .big-header{  
@@ -209,18 +241,27 @@ body{
     text-align: center;
     cursor: pointer; 
 }
+.features-icon-container{
+    padding: 25px 100px;
+    margin-bottom: 30px;
+}
+.team-description{
+    display: block; 
+    background-color: var(--accent-text-color1); 
+    box-shadow: 0px 4px 4px 0px #00000040;
+
+}
 .list-features,.list-do,.list-team{
     list-style-type: none;
     display: flex;
-    margin: 0;
+    gap: 30px;
 }
 
  .list-features-li{
     width: 270px; 
  }
  .list-features-li:not(:last-child){
-    width: 270px; 
-    margin-right: 30px;
+    width: 270px;     
  }
 .list-features-name,.list-team-name{  
     color: var(--primary-text-color);
@@ -260,19 +301,31 @@ body{
 
 }
 .list-do-item:not(:last-child){   
-    margin-right: 30px;    
+   /*  margin-right: 30px;  */   
 }
 .team{ 
     background-color: var(--bg-team);
+}
+.social-links{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 32px;    
+}
+.social-icon-container{
+    width: 44px;
+    height: 44px;
+    border-radius: 50% 50%;
 }
 .list-team-item{
    
 }
 .list-team-item:not(:last-child){   
-    margin-right: 30px;    
+   /*  margin-right: 30px;  */   
 }
 .img-team{
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 .list-team-name{  
     margin-bottom: 10px;   
