@@ -305,12 +305,9 @@ body{
     margin-bottom: 30px;
     background: var(--bg-icon-features); 
 }
-.team-description{
-    display: block; 
-    background-color: var(--accent-text-color1); 
-    
-
-}
+.list-team{ 
+    display: flex;  
+} 
 .list-features,.list-do,.list-team{
     list-style-type: none;
     display: flex;
@@ -381,7 +378,7 @@ body{
     border-radius: 50%;
 }
 .list-team-item{
-   
+   background-color: var(--accent-text-color1);
 }
 .list-team-item:not(:last-child){   
    /*  margin-right: 30px;  */   
