@@ -10,7 +10,9 @@
     --logo-border: #ECECEC;
     --project-card-border:  #EEEEEE;
     --bg-btn: #F5F4FA; 
-    --bg-team:  #F5F4FA; }
+    --bg-team:  #F5F4FA; 
+    --bg-icon-features:  #F5F4FA;
+}
 
 html {
     box-sizing: border-box;
@@ -30,6 +32,10 @@ li
 {
     padding: 0;
     margin: 0;
+}
+svg
+{
+	fill: currentColor;
 }
 
 
@@ -51,6 +57,7 @@ body{
     padding-top: 24px;
     padding-bottom: 25px;
     align-items: center;
+    justify-content: center;
 }  
 .header{
     border-bottom: 1px solid var(--logo-border);   
@@ -122,7 +129,7 @@ body{
    
  .icon:hover,
  .icon:focus{
-    fill: var(--accent-text-color2);               
+    /* fill: var(--accent-text-color2);   */              
  }
  .icon-client,
  .icon.ref
@@ -152,8 +159,14 @@ body{
     ;
 }
 .social-ref:hover,
-.social-ref:focus{     
+.social-ref:focus{       
     background-color: var(--accent-text-color2);
+}
+.social-ref:hover svg,
+.social-ref:focus svg{       
+    background-color: var(--accent-text-color2);
+    color: var(--accent-text-color1);    
+    fill: currentColor;   
 }
    
 .contact-link{      
@@ -190,7 +203,7 @@ body{
 }
 .social-links-container{ 
     display: block;  
-    margin-left: 50px;     
+    margin-left: 70px;     
 } 
 .social-links-text{    
     margin-top: 12px;
@@ -221,6 +234,9 @@ body{
     line-height: 1.7142;
     letter-spacing: 0.03em;          
 }
+.address-footer-li{
+    font-style: normal;
+}
 .address-footer-li:not(:last-child){
     margin-bottom: 9px;
 }
@@ -240,7 +256,9 @@ body{
     padding-top:  94px;
     padding-bottom:  94px;  
 }
-.section.hero{        
+.section.hero{ 
+    margin: 0 auto;
+
     background-color: rgba(47, 48, 58, 0.4); 
     background-image:url(../images/overlay.png), url(../images/hero.jpg);
     background-size: cover;  
@@ -248,7 +266,7 @@ body{
     background-position: center;    
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px; 
+    max-width: 1600px;     
 }
 .big-header{  
     display: block;     
@@ -285,6 +303,7 @@ body{
 .features-icon-container{
     padding: 25px 100px;
     margin-bottom: 30px;
+    background: var(--bg-icon-features); 
 }
 .team-description{
     display: block; 
@@ -402,6 +421,7 @@ body{
     padding: 16px 32px; 
     border: 1px solid rgba(175, 177, 184, 1);   
     border-radius: 4px; 
+    color: var(--accent-text-color2);
 }
 .client-icon-container{
     display: flex;
@@ -410,8 +430,14 @@ body{
     width: 106px;
     height: 60px;  
 }
-.client-icon-ref:hover{     
+.client-icon-ref:hover,
+.client-icon-ref:focus{     
     border: 1px solid var(--accent-text-color2);   
+}
+.client-icon-ref:hover svg,
+.client-icon-ref:focus svg{     
+    color: (--accent-text-color2);  
+    fill: currentColor; 
 }
 
 /* !!!!!!!!!!!! PORTFOLIO.HTML !!!!!!!!!!!!!!*/
